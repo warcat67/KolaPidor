@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  text-align: center;
+  cursor: url("junk-drawer/PixelatedCursor.cur"), auto;
+}
+
+a {
+  cursor: url("junk-drawer/classic_linksel.cur"), auto;
+}
+
+
+@font-face {
+  font-family: 'IBM_PGC';
+  src: url('junk-drawer/Web437_IBM_PGC.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  padding: 1em 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.office {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.desk {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container for image and overlay text */
+.hotspot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  /* The image rotates on container hover so cursor here is optional */
+}
+
+/* Image styling and rotation on hotspot hover */
+.hotspot img {
+  transform: rotate(0deg);
+  transform-origin: center center;
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hotspot:hover > img {
+  transform: rotate(10deg);
+}
+
+.hotspot:hover > img.no-rotate { transform: rotate(0deg); }
+
+.hover-text {
+  position: absolute;
+  top: var(--hover-text-top, 55%); /* default: 55% */
+  left: var(--hover-text-left, 50%); /* default: 50% */
+  transform: translate(-50%, -50%);
+  background: transparent;
+  color: white !important;
+  /* Use filter drop-shadows for a crisp black outline */
+  filter: drop-shadow(1px 1px 0 black)
+          drop-shadow(-1px 1px 0 black)
+          drop-shadow(1px -1px 0 black)
+          drop-shadow(-1px -1px 0 black);
+  padding: 10px 18px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 1.5em;
+  z-index: 10;
+  white-space: pre-line;
+  box-shadow: none;
+  font-family: 'IBM_PGC', "DOS", "Courier New", monospace;
+  text-decoration: none !important;
+  transition: opacity 0.3s ease;
+  -webkit-font-smoothing: none;
+  text-align: left;
+}
+
+
+
+/* Reveal overlay text on container hover */
+.hotspot:hover .hover-text {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Ensure the hyperlink retains its styling in all states */
+.hover-text:visited,
+.hover-text:active,
+.hover-text:link {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.hover-text:hover,
+.hover-text:focus,
+.hover-text:active {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+
+.appear {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.appear img {
+  opacity: 0;
+}
+.appear:hover img, .appear:hover img {
+  opacity: 1;
+}
+
+.label {
+  display: block;
+  font-size: 0.9em;
+  color: black;
+  margin-top: 0.2em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.marquee-container {
+  position: absolute;
+  bottom: 50%;
+  left: 25%;
+  width: 50%;
+  height: auto;
+  line-height: 1.2;
+  padding: 4px 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 3;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 45s linear infinite;
+  font-family: "DOS", "Courier New", monospace;
+  font-size: clamp(8px, 1.2vw, 18px);
+  color: #39FF14;
+  text-shadow: 
+    0 0 2px #39FF14,
+    0 0 4px #39FF14,
+    0 0 6px #39FF14,
+    0 0 8px #39FF14;
+  will-change: transform;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

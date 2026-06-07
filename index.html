@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <a rel="me" href="https://mastodon.social/@kdkemp"></a>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The official website of K.D. Kemp, archivist and author who explores the old, odd, and analog to inspire critical thinking and wonder in middle-grade readers."
+    />
+    <meta
+      name="keywords"
+      content="K.D. Kemp, middle grade author, kids mysteries, media literacy, analog technology, VHS, 35mm film, paranormal debunking, children's books, retro media, media forensics, physical media, old internet, 90s nostalgia, skeptical kids, subversive storytelling"
+    />
+    <meta name="author" content="K.D. Kemp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K.D. Kemp</title>
+    <link
+      href="assets/style-home.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <style>
+      /* Popup container */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      /* The actual popup (appears on top) */
+      .popup .popupimg {
+        visibility: hidden;
+        width: 250px;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 999;
+        bottom: -75%;
+        left: 75%;
+      }
+
+      .clippy-wrap {
+        position: relative;
+        display: inline-block;
+      }
+
+      .clippy-main {
+        display: block;
+      }
+
+      .clippy-text {
+        position: absolute;
+        bottom: 95%;
+        left: -140%;
+        width: auto;
+      }
+
+      /* Toggle visibility */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+
+      /* Fade-in animation */
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <div class="office">
+      <img
+        src="assets/desk-3.png"
+        class="desk"
+        alt="Desk background"
+      />
+
+      <div class="appear" style="top: 61%; left: 72.5%; width: 16%">
+        <a href="https://kdkemp.com/pmg">
+          <img
+            src="assets/open-drawer.png"
+            alt="Open Drawer"
+            style="width: 100%"
+          />
+        </a>
+      </div>
+
+      <div class="appear" style="top: 76.8%; left: 27.5%; width: 16%">
+        <a href="">
+          <img
+            src="assets/2-drawers.png"
+            alt="2nd Open Drawer"
+            style="width: 100%"
+          />
+        </a>
+      </div>
+
+      <a
+        href="https://kdkemp.com/main/computer.html"
+        class="hotspot"
+        style="top: 48%; left: 57%; width: 10%"
+      >
+        <img src="assets/mouse.png" alt="Mouse" class="no-rotate" />
+      </a>
+
+      <a
+        href="http://kdkemp.com/main/computer"
+        class="hotspot"
+        style="top: 40%; left: 50%; width: 20%"
+      >
+        <img
+          src="assets/computer-2.png"
+          alt="computer monitor"
+          class="no-rotate"
+        />
+        <div class="marquee-container">
+          <div class="marquee-text">
+            Warcat67 huilo
+          </div>
+        </div>
+      </a>
+
+      <!-- Other hotspots -->
+      <a href="" class="hotspot" style="top: 74%; left: 40%; width: 18%">
+        <img
+          src="assets/tower-2.png"
+          alt="Tower"
+          class="no-rotate"
+        />
+      </a>
+
+      <div class="hotspot" style="top: 28.2%; left: 71.3%; width: 11.5%">
+        <img src="assets/camera.png" alt="Photos" />
+        <a
+          href="https://kdkemp.com/main/darkroom.html"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          photos
+        </a>
+      </div>
+
+      <div class="hotspot" style="top: 15%; left: 55%; width: 5.5%">
+        <img src="assets/ned.png" alt="Photos" />
+      </div>
+
+      <div
+        class="hotspot"
+        style="top: 11.4%; left: 16.5%; width: 18%; transform: rotate(2deg)"
+      >
+        <img src="assets/vhs-tapes.png" alt="vhs tapes" />
+        <a
+          href="https://kdkemp.com/main/tv-room.html"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          tv room
+        </a>
+      </div>
+
+      <div
+        class="hotspot"
+        style="top: 23.8%; left: 16.8%; width: 17%; transform: rotate(-1deg)"
+      >
+        <img src="assets/books-main.png" alt="books" />
+        <a
+          href="https://kdkemp.com/main/bookcase.html"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          books
+        </a>
+      </div>
+
+      <div
+        class="hotspot"
+        style="top: 33.4%; left: 17.3%; width: 15.5%; transform: rotate(-1deg)"
+      >
+        <img src="assets/boombox.png" alt="boombox" />
+        <a
+          href="https://kdkemp.com/main/music-collection.html"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          music
+        </a>
+      </div>
+
+      <div class="hotspot" style="top: 71%; left: 15%; width: 12%">
+        <img src="assets/piggy-bank-2.png" alt="piggy bank" />
+        <a
+          href="https://kdkemp.com/main/pressed-pennies.html"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          pressed pennies
+        </a>
+      </div>
+
+      <div class="hotspot" style="top: 24.5%; left: 60%; width: 3%">
+        <img
+          src="assets/eldo-she-was-an-anomaly.png"
+          alt="perfume"
+        />
+        <a
+          href="https://kdkemp.com/main/perfume.html"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          perfume
+        </a>
+      </div>
+
+      <div class="hotspot" style="top: 48.2%; left: 39.5%; width: 8%">
+        <img src="assets/coffee.png" alt="Coffee" />
+        <a
+          href="http://mrcoolcola.ddns.net:8080"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 65%"
+        >
+          mrCoolCola
+        </a>
+      </div>
+
+      <div class="hotspot" style="top: 47.5%; left: 74%; width: 14.5%">
+        <img src="assets/typewriter.png" alt="typewriter" />
+        <a
+          href="https://kdkemp.com/main/writing.html"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          writing
+        </a>
+      </div>
+
+      <div class="hotspot" style="top: 37.5%; left: 39.5%; width: 5%">
+        <img src="assets/post-it.png" alt="post-it" />
+        <a
+          href="https://kdkemp.com/main/updates.html"
+          class="hover-text"
+          style="--hover-text-top: 20%; --hover-text-left: 50%"
+        >
+          updates
+        </a>
+      </div>
+
+      <div class="hotspot" style="top: 15.8%; left: 76.5%; width: 6.5%">
+        <img src="assets/pee-wee.png" alt="Pee-wee" />
+      </div>
+
+      <a href="" class="hotspot" style="top: 17.8%; left: 81%; width: 4.5%">
+        <img src="assets/pterri.png" alt="Pterri" />
+      </a>
+
+      <div class="hotspot" style="top: 19.4%; left: 43.5%; width: 15%">
+        <img src="assets/phone.png" alt="Phone" />
+        <a
+          href="mailto:hello@kdkemp.com"
+          class="hover-text"
+          style="--hover-text-top: 39%; --hover-text-left: 50%"
+        >
+          contact me
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
