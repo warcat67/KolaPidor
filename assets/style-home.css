@@ -1,11 +1,10 @@
 body {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
-  background-color: white;
   text-align: center;
   cursor: url("junk-drawer/PixelatedCursor.cur"), auto;
-  background-image: url("assets/wallpaper.jpg");
-  background-repeat: repeat-y;
+  background: url("wallpaper.jpg");
+  background-size: 30%;
 }
 
 a {
