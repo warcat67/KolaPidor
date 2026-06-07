@@ -162,12 +162,12 @@ header {
   animation: scroll-left 3s linear infinite;
   font-family: "DOS", "Courier New", monospace;
   font-size: clamp(8px, 1.2vw, 18px);
-  color: #39FF14;
+  color: #ffffff;
   text-shadow: 
-    0 0 2px #39FF14,
-    0 0 4px #39FF14,
-    0 0 6px #39FF14,
-    0 0 8px #39FF14;
+    0 0 2px #ffffff,
+    0 0 4px #ffffff,
+    0 0 6px #ffffff,
+    0 0 8px #ffffff;
   will-change: transform;
 }
 
