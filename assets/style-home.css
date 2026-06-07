@@ -4,6 +4,8 @@ body {
   background-color: white;
   text-align: center;
   cursor: url("junk-drawer/PixelatedCursor.cur"), auto;
+  background-image: url("assets/wallpaper.jpg");
+  background-repeat: repeat-y;
 }
 
 a {
