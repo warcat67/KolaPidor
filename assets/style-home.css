@@ -159,7 +159,7 @@ header {
 .marquee-text {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll-left 3s linear infinite;
+  animation: scroll-left 5s linear infinite;
   font-family: "DOS", "Courier New", monospace;
   font-size: clamp(8px, 1.2vw, 18px);
   color: #ffffff;
