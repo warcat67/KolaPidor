@@ -59,7 +59,7 @@ header {
 }
 
 .hotspot:hover > img {
-  transform: rotate(10deg);
+  transform: rotate(390deg);
 }
 
 .hotspot:hover > img.no-rotate { transform: rotate(0deg); }
